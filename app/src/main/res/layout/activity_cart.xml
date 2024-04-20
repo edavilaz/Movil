@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_general"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="40dp"
+    tools:context=".CartActivity">
+
+
+    <TextView
+        android:id="@+id/txtCart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Carro de Compras"
+        android:textAlignment="center"
+        android:textColor="@color/Orange"
+        android:textSize="34sp"
+        android:textStyle="italic" />
+
+    <ImageView
+        android:id="@+id/productView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/ic_videogame" />
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Cantidad"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/Orange"
+        android:textSize="34sp" />
+
+    <Button
+        android:id="@+id/btnCart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Comprar"
+        android:textColor="@color/Orange"
+        android:textSize="34sp" />
+</LinearLayout>

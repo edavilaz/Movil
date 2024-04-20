@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!--    Colores para mi Desarrollo-->
+    <color name="background_general">#B2BADD </color>
+    <color name="blueGray">#5F6379</color>
+    <color name="darkBlue">#1C274C</color>
+    <color name="gold">#FFCE00</color>
+    <color name="red">#FC592D</color>
+    <color name="turquoise">#00AAFF</color>
+
+    <!--    Colores Para MI app-->
+
+
+    <color name="Primary">#007BFF</color>
+    <color name="Secondary">#6C757D</color>
+    <color name="Success">#28A745</color>
+    <color name="Info">#17A2B8</color>
+    <color name="Warning">#FFC107</color>
+    <color name="Danger">#DC3545</color>
+    <color name="Light">#F8F9FA</color>
+    <color name="Dark">#343A40</color>
+    <color name="Indigo">#6610F2</color>
+    <color name="Orange">#FD7E14</color>
+
+
+    <!--    Colores Por componentes-->
+
+    <color name="Background_Component">#6C757D</color>
+    <color name="Background_Component_Selected">#B2BADD</color>
+    <color name="Background_App">#0D0F36</color>
+    <color name="Text">#69D2CD</color>
+    <color name="Title">#B9F1D6</color>
+</resources>

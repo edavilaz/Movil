@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_general"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ProductActivity">
+
+
+    <ImageView
+        android:id="@+id/tvView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/Background_Component"
+        android:contentDescription="Tv"
+        android:rotationX="-4"
+        android:rotationY="10"
+        app:srcCompat="@drawable/ic_tv" />
+
+    <ImageView
+        android:id="@+id/smartView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/Background_Component"
+        android:contentDescription="SmartPhones"
+        android:rotationY="-13"
+        app:srcCompat="@drawable/ic_smartphone" />
+
+    <ImageView
+        android:id="@+id/videogameView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/Background_App"
+        android:contentDescription="VideoGames"
+        android:rotationX="22"
+        app:srcCompat="@drawable/ic_videogame" />
+</LinearLayout>
