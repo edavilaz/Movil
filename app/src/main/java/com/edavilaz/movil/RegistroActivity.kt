@@ -6,15 +6,15 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.edavilaz.movil.databinding.ActivityLoginBinding
-import com.edavilaz.movil.databinding.ActivityUserBinding
+import com.edavilaz.movil.databinding.ActivityRegistroBinding
 
-class UserActivity : AppCompatActivity() {
+
+class RegistroActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
 
-        val binding = ActivityUserBinding.inflate(layoutInflater)
+        val binding = ActivityRegistroBinding.inflate(layoutInflater)
 
         setContentView(binding.root)
 
@@ -23,13 +23,9 @@ class UserActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        binding.btnCrear.setOnClickListener { navigateToRegistroActivity() }
-
     }
 
-    private fun navigateToRegistroActivity() {
-        val intent = Intent(this, RegistroActivity::class.java)
-        startActivity(intent)
 
-    }
 }
+
+

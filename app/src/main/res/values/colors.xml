@@ -4,7 +4,7 @@
     <color name="white">#FFFFFFFF</color>
 
     <!--    Colores para mi Desarrollo-->
-    <color name="background_general">#B2BADD </color>
+
     <color name="blueGray">#5F6379</color>
     <color name="darkBlue">#1C274C</color>
     <color name="gold">#FFCE00</color>
@@ -27,7 +27,7 @@
 
 
     <!--    Colores Por componentes-->
-
+    <color name="background_general">#B2BADD </color>
     <color name="Background_Component">#6C757D</color>
     <color name="Background_Component_Selected">#B2BADD</color>
     <color name="Background_App">#0D0F36</color>
