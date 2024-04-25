@@ -5,10 +5,11 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    android:layout_margin="30dp"
     android:background="@color/Background_App"
     android:paddingHorizontal="16dp"
-    android:paddingVertical="32dp">
+    android:paddingVertical="32dp"
+    tools:context=".MainActivity">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/viewHome"
@@ -193,12 +194,12 @@
         android:layout_marginTop="32dp"
         android:clickable="true"
         android:contextClickable="true"
+        android:onClick="usersActivity"
         app:cardBackgroundColor="@color/Background_Component"
         app:cardCornerRadius="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/viewLogin"
-        app:layout_constraintTop_toBottomOf="@+id/viewProducts"
-        android:onClick="usersActivity">
+        app:layout_constraintTop_toBottomOf="@+id/viewProducts">
 
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
