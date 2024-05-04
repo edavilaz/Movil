@@ -23,13 +23,13 @@ class UserActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        binding.btnCrear.setOnClickListener { navigateToRegistroActivity() }
+//        binding.btnCrear.setOnClickListener { navigateToRegistroActivity() }
 
     }
 
-    private fun navigateToRegistroActivity() {
-        val intent = Intent(this, RegistroActivity::class.java)
-        startActivity(intent)
-
-    }
+//    private fun navigateToRegistroActivity() {
+//        val intent = Intent(this, RegistroActivity::class.java)
+//        startActivity(intent)
+//
+//    }
 }

@@ -12,36 +12,37 @@
     android:background="@color/background_general">
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:id="@+id/imageView3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         app:srcCompat="@drawable/ic_user2" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/registro"
+        android:text="@string/user"
         android:textAlignment="center"
         android:textColor="@color/Orange"
         android:textSize="34sp"
         android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/txtIdUsuario"
+    <EditText
+        android:id="@+id/txtId"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Id"
-        android:textColor="@color/Light"
-        android:textSize="24sp"
-        android:textStyle="bold" />
+        android:ems="10"
+        android:hint="Id"
+        android:inputType="text"
+        android:textColor="@color/Orange"
+        android:textSize="24sp" />
 
     <EditText
         android:id="@+id/txtUsuario"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Escribe un nombre"
+        android:hint="Escribe tu Nombre"
         android:inputType="text"
         android:textColor="@color/darkBlue"
         android:textSize="24sp" />
@@ -51,7 +52,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Escribe un correo"
+        android:hint="Escribe un email"
         android:inputType="textEmailAddress"
         android:textColor="@color/darkBlue"
         android:textSize="24sp" />
@@ -63,5 +64,37 @@
         android:text="Crear Usuario"
         android:textColor="@color/Orange"
         android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btnConsultar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Consultar"
+        android:textColor="@color/Orange"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btnEliminar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Eliminar"
+        android:textColor="@color/Orange"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btnModificar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Modificar"
+        android:textColor="@color/Orange"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/txtConsulta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Aparecerá el listado"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
 </LinearLayout>
