@@ -21,7 +21,7 @@ class miSQLiteHelper(context: Context): SQLiteOpenHelper(
     }
 
     fun agregarUsuario(nombre: String, email: String){
-        val datos = ContentValues()
+        var datos = ContentValues()
         datos.put(/* key = */ "nombre", /* value = */ nombre)
         datos.put(/* key = */ "email", /* value = */ email)
 
@@ -30,25 +30,26 @@ class miSQLiteHelper(context: Context): SQLiteOpenHelper(
         db.close()
 
     }
-    fun borrarUsuario(_id: Int):Int {
-        val args = arrayOf(_id.toString())
+    fun borrarUsuario(id: Int):Int {
+        val args = arrayOf(id.toString())
 
         val db = this.writableDatabase
-        val borrados = db.delete("users","_id = ?", args)
-        // db.exexsSQL("DELETE FROM users WHERE _id = ?",args)
+        val borrados = db.delete("users","id = ?", args)
+        // db.execsSQL("DELETE FROM users WHERE _id = ?",args)
         db.close()
         return borrados
 
     }
 
-    fun modificarUsuario(_id: Int,nombre: String, email: String){
-        val args = arrayOf(_id.toString())
-        val datos = ContentValues()
+   fun modificarUsuario(id: Int, nombre: String, email: String){
+        val args = arrayOf(id.toString())
+
+        var datos = ContentValues()
         datos.put(/* key = */ "nombre", /* value = */ nombre)
         datos.put(/* key = */ "email", /* value = */ email)
 
         val db = this.writableDatabase
-        db.update("users",datos,"_id=?",args)
+        db.update("users", datos,"id = ?", args)
         db.close()
 
     }

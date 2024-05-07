@@ -26,6 +26,7 @@ class MainActivity : AppCompatActivity() {
         binding.viewLogin.setOnClickListener { navigateToLoginActivity() }
         binding.viewCart.setOnClickListener { navigateToCartActivity() }
         binding.viewProducts.setOnClickListener { navigateToProductActivity() }
+        binding.btnMaps.setOnClickListener { navigateToMapsActivity() }
 //        binding.viewLogout.setOnClickListener { navigateToLogoutActivity() }
 
     }
@@ -43,6 +44,11 @@ class MainActivity : AppCompatActivity() {
     }
     private fun navigateToProductActivity(){
         val intent = Intent(this, ProductActivity::class.java)
+        startActivity(intent)
+    }
+
+    private fun navigateToMapsActivity(){
+        val intent = Intent(this, MapsActivity::class.java)
         startActivity(intent)
     }
 //    private fun navigateToLogoutActivity() {

@@ -224,4 +224,22 @@
 
     </androidx.cardview.widget.CardView>
 
+    <Button
+        android:id="@+id/btnMaps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/Background_Component"
+        android:text="Maps"
+        android:textColor="@color/Orange"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:icon="@android:drawable/ic_menu_mapmode"
+        app:iconSize="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewLogout" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

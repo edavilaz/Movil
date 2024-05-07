@@ -7,5 +7,6 @@
     <string name="login">Login</string>
     <string name="logout">Logout</string>
     <string name="registro">Registro</string>
+    <string name="title_activity_maps">MapsActivity</string>
 
 </resources>
