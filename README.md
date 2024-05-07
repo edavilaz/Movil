@@ -56,8 +56,25 @@ Finalmente, para eliminar colocaremos el id 2 y pulsaremos el botón eliminar y 
 
 ![users6](README/users6.png)
 
+## Maps
 
+Se realiza además un botón en el activity principal, el cual nos dirige al activity de geolocalización. (En este momento no se tiene habilitada la api, porque no se generó el KEY API).
 
+La ventana principal, quedó de la siguiente manera:
+
+![maps1](README/maps1.png)
+
+Y la ventana de Maps sería la siguiente, que como no se habilitó la key sólo muestra el logo de Google.
+
+![maps2](README/maps2.png)
+
+Se muestra la parte del código donde debe ir ubicación de la latitud y longitud.
+
+![maps3](README/maps3.png)
+
+En el archivo AndroidManifest.xml es donde debemos colocar el APIKEY, pero no se pudo generar, porque sólo tenía una tarjeta de débito y solicita una de crédito.
+
+![maps4](README/maps4.png)
 ## Autor del proyecto
 
 Jaime Enrique Dávila Zuazo
