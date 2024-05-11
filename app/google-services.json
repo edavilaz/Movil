@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "423918877376",
+    "project_id": "moviledz",
+    "storage_bucket": "moviledz.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:423918877376:android:caee7beeb683a039624b25",
+        "android_client_info": {
+          "package_name": "com.edavilaz.movil"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBeYASZ79FjyKt-k_EstBbmQuqq_jrLeUM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

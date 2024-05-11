@@ -5,40 +5,82 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="20dp"
     android:background="@color/background_general"
     android:orientation="vertical"
     android:padding="16dp"
     tools:context=".ProductActivity">
 
-
-    <ImageView
-        android:id="@+id/tvView"
+    <EditText
+        android:id="@+id/id"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:background="@color/Background_Component"
-        android:contentDescription="Tv"
-        android:rotationX="-4"
-        android:rotationY="10"
-        app:srcCompat="@drawable/ic_tv" />
+        android:ems="10"
+        android:hint="id"
+        android:inputType="number" />
 
-    <ImageView
-        android:id="@+id/smartView"
+    <EditText
+        android:id="@+id/nombre"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:background="@color/Background_Component"
-        android:contentDescription="SmartPhones"
-        android:rotationY="-13"
-        app:srcCompat="@drawable/ic_smartphone" />
+        android:ems="10"
+        android:hint="nombre"
+        android:inputType="text" />
 
-    <ImageView
-        android:id="@+id/videogameView"
+    <EditText
+        android:id="@+id/descripcion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:background="@color/Background_App"
-        android:contentDescription="VideoGames"
-        android:rotationX="22"
-        app:srcCompat="@drawable/ic_videogame" />
+        android:ems="10"
+        android:hint="descripcion"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/precio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="precio"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/Consultar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Consultar Productos"
+        android:textColor="@color/Orange"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/Guardar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar Producto"
+        android:textColor="@color/Orange"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/Modificar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Modificar"
+        android:textColor="@color/Orange"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/Borrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Borrar"
+        android:textColor="@color/Orange"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/txtResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Acá se mostrarán los datos"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 </LinearLayout>

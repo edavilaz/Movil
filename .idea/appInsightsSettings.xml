@@ -8,10 +8,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="PLACEHOLDER" />
-                  <option name="mobileSdkAppId" value="" />
-                  <option name="projectId" value="" />
-                  <option name="projectNumber" value="" />
+                  <option name="appId" value="com.edavilaz.movil" />
+                  <option name="mobileSdkAppId" value="1:423918877376:android:caee7beeb683a039624b25" />
+                  <option name="projectId" value="moviledz" />
+                  <option name="projectNumber" value="423918877376" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />
