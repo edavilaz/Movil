@@ -24,11 +24,18 @@ class LoginActivity : AppCompatActivity() {
             insets
         }
         binding.btnRegistro.setOnClickListener { navigateToRegistroActivity() }
+        binding.btnLogin.setOnClickListener { navigateToProductActivity() }
 
     }
 
     private fun navigateToRegistroActivity(){
         val intent = Intent(this, RegistroActivity::class.java)
+        startActivity(intent)
+
+    }
+
+    private fun navigateToProductActivity(){
+        val intent = Intent(this, ProductActivity::class.java)
         startActivity(intent)
     }
 }

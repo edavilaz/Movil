@@ -7,75 +7,72 @@ El presente proyecto es realizado en Android Studio en su versión Iguana (2023)
 
 Al final se logrará, el CRUD de las tablas de Usuario y de productos.
 
-**Se puede ver una descripción inicial de la aplicación en el siguiente link de YouTube:**
+
+## Descripción Final del Proyecto
+
+Se tiene una ventana principal como se explicó en la anterior entrega ya tiene GoogleMaps. Con la salvedad de la APIKEY, que debe ser habilitada.
+
+![1](README/1.png)
+
+## Activity Login
+
+En la activity de usuarios ya no se tiene nada, ya que todas las funcionalidades de usuario quedan en la activity de Login, donde se puede hacer el inicio de sesión, el registro de un nuevo usuario y el CRUD completo que se mostró en la anterior actividad (con SQLite).
+
+![2](README/2.png)
+
+## Inicio Sesión
+
+En la presente pantalla, el usuario deberá ingresar mediante su usuario y clave. (La de inicio enrique y edavilaz@gmail.com). Desde esta pantalla nos lleva directamente a la activity de productos. Esto también funcionará con cualquier usuario que esté creado en la tabla usuarios o que se registre.
+
+![3](README/3.png)
+
+Al ingresar el inicio de sesión, nos llevará a la vista de productos. En esta tenemos el CRUD completo pero ha mi modo de ver se hace una mejor conexión con FIREBASE. Siguiente el link de la base en firebase.
+
+[https://console.firebase.google.com/u/0/project/moviledz/firestore/databases/-default-/data/~2Fproducts~2F3?hl=es-419](https://console.firebase.google.com/u/0/project/moviledz/firestore/databases/-default-/data/~2Fproducts~2F3?hl=es-419)
+
+![5](README/5.png)
+
+## Se muestra el CRUD de productos
+
+![6](README/6.png)
+
+### Ingresamos un nuevo producto
+
+![7](README/7.png)
+
+### Modificación Registro 5
+
+![8](README/8.png)
+
+![9](README/9.png)
+
+![10](README/10.png)
+
+### Realizo la eliminación del registro 5
+
+![11](README/11.png)
+
+![12](README/12.png)
+
+![14](README/14.png)
+
+## Mayores detalles
+
+La aplicación logra salir de mediante el logout. Una funcionalidad que al realizar el debug no funcionaba correctamente, por lo que se determinó hacer la salida de la aplicación en lugar del cierre de sesión.
+
+
+![cierre](README/maps1.png)
+
+![cierre2](README/17.png)
+
+## Finalmente se creo la APK
+
+![apk](README/18.png)
 
 
 
+## Desarrollador
 
-## Funcionalidades de la aplicación 
-
-
-### Pantalla Registro
-En esta pantalla ya se puede llegar a crear usuarios, modificarlos, eliminarlos y consultar la lista completa de los que están en la tabla users. Se partió de la siguiente pantalla en un principio.
-
-![pantalla registro](README/registro.png)
-
-#### Pantalla Nueva con los cambios
-Actualmente se llegó a la siguiente pantalla y se muestran los cambios realizados a la misma.
-
-![users1](README/users1.png)
-
-### CRUD
-
-#### Mensaje de No guardado
-
-En la misma ya se colocan más botones, los cuales logran funcionar correctamente para evidenciar un CRUD. En la siguiente pantalla se muestra una validación que se realiza al intentar crear un usuario sin colocar datos, entonces mediante un mensaje  Toast se muestra un mensaje indicando que no se ha podido guardar el usuario.
-
-![users2](README/users2.png)
-
-#### Mensaje de Guardado
-
-Posteriormente se crea un nuevo usuario y se muestra el mensaje de que fue Guardado.
-
-![users3](README/users3.png)
-
-#### Verificación de Datos Botón Consultar
-
-Al hacer click en el botón consultar, se muestra un listado que por el momento está realizado en un TextView, mostrando el número de Id, el nombre y el email, de los registros creados en la tabla users.
-
-![users4](README/users4.png)
-
-#### Botón Modificar
-
-Posteriormente se muestra la modificación que se hace del usuario número 3, debemos colocar los datos en la parte superior, es decir 3, pedro, pridto@pedrito.com. Luego se pulsa el botón modificar y finalmente el botón consultar, para ver los cambios.
-
-![users5](README/users5.png)
-
-#### Botón Eliminar
-Finalmente, para eliminar colocaremos el id 2 y pulsaremos el botón eliminar y finalmente consultar, para tener el siguiente resultado.
-
-![users6](README/users6.png)
-
-## Maps
-
-Se realiza además un botón en el activity principal, el cual nos dirige al activity de geolocalización. (En este momento no se tiene habilitada la api, porque no se generó el KEY API).
-
-La ventana principal, quedó de la siguiente manera:
-
-![maps1](README/maps1.png)
-
-Y la ventana de Maps sería la siguiente, que como no se habilitó la key sólo muestra el logo de Google.
-
-![maps2](README/maps2.png)
-
-Se muestra la parte del código donde debe ir ubicación de la latitud y longitud.
-
-![maps3](README/maps3.png)
-
-En el archivo AndroidManifest.xml es donde debemos colocar el APIKEY, pero no se pudo generar, porque sólo tenía una tarjeta de débito y solicita una de crédito.
-
-![maps4](README/maps4.png)
-## Autor del proyecto
 
 Jaime Enrique Dávila Zuazo
 

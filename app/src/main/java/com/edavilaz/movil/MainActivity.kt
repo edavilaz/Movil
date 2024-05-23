@@ -27,6 +27,7 @@ class MainActivity : AppCompatActivity() {
         binding.viewCart.setOnClickListener { navigateToCartActivity() }
         binding.viewProducts.setOnClickListener { navigateToProductActivity() }
         binding.btnMaps.setOnClickListener { navigateToMapsActivity() }
+        binding.viewLogout.setOnClickListener { close() }
 //        binding.viewLogout.setOnClickListener { navigateToLogoutActivity() }
 
     }
@@ -56,4 +57,8 @@ class MainActivity : AppCompatActivity() {
 //        startActivity(intent)
 //    }
 
+    private fun close(){
+        finish();
+        System.exit(0);
+    }
 }
